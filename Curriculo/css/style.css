@@ -1,0 +1,68 @@
+.der{
+    width: 60%;
+    height: 100%;
+}
+.izq{
+    background-color: #97a0aa;
+    width: 30%;
+    height: auto;
+}
+.der, .izq{
+    display: inline-table;
+}
+.izq h3{
+    border-bottom: white solid;
+    border-radius: 20%;
+    margin-left: 10px;
+}
+.der h3{
+    border-bottom: black solid;
+    border-radius: 20%;
+    margin-left: 10px;
+}
+h1{
+    text-align: center;
+}
+.foto{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    display: inline-block;
+}
+.foto img{
+    border-radius: 50%;
+}
+.contacto{
+    color: white;
+}
+.contacto img{
+    float: left;
+    border-left: 10px solid #97a0aa ;
+    border-right: 5px solid #97a0aa;
+}
+.software{
+    color: white;
+    margin-left: 10px;
+}
+.referencia{
+    color: white;
+    margin-left: 10px;
+}
+.idiomas{
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.fecha, .trabajo{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+}
+.año, .escuela{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+}
