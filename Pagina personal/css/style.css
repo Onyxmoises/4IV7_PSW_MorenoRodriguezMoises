@@ -1,0 +1,60 @@
+.index{
+    text-align: center;
+}
+header{
+    background-color: white;
+}
+iframe{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 1630px;
+    height: 700px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+}
+.arriba{
+    list-style: none;
+    margin: 20px auto;
+    width: 700px;
+    background-color: white;
+}
+.abajo{
+    list-style: none;
+    margin: 20px auto;
+    width: 700px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.menu > li{
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 20px 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.nos{
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+.nos > p, .nos > h2,.nos > h3{
+    width: 700px;
+    margin: 50px;
+}
+.tienda{
+    text-align: center;
+    width: 1600px;
+    margin-top: 20px;
+}
+.proxi{
+    background-color: rgb(71, 114, 114);
+    width: 530px;
+    margin-top: 10px;
+    float: left;
+}
+.proxi p{
+    width: 300px;
+    float: right;
+    font-family: sans-serif;
+}
