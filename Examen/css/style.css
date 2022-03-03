@@ -1,0 +1,42 @@
+*{
+    text-align: center;
+}
+body{
+    background-color: #ffffff;
+}
+header{
+    width: auto;
+    color: white;
+    background-color: rgb(2, 104, 221);
+}
+.titulo{
+    color: white;
+    background-color: #164A41;
+}
+table{
+    margin: auto;
+}
+.cont{
+    height: 75vh;
+}
+.encabezado{
+    background-color: #4682b4;
+    color: white;
+}
+.tabla input, th, select{
+    width: 200px;
+    height: 20px;
+}
+.boton{
+    margin-top: 20px;
+}
+footer{
+    margin: 20px auto;
+    width: auto;
+    color: white;
+    background-color: black;
+}
+.datos h2, .datos p{
+    display: inline-block;
+    margin: 20px;
+}

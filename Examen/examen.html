@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Practico</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validar.js"></script>
+</head>
+<body>
+    <div>
+        <header>
+            <p>Examen Practico 1° Corte</p>
+        </header>
+        <nav class="titulo">
+            <h2>Cálculo de interés compuesto</h2>
+        </nav>
+    </div>
+    <div class="cont">
+        <div class="tabla">
+            <table border="1">
+                <thead>
+                    <tr class="encabezado">
+                        <th>Valor</th>
+                        <th>Cuota inicial</th>
+                        <th>Periodo</th>
+                        <th>Interes</th>
+                        <th>Pago total</th>
+                        <th>Pago mensual</th>
+                    </tr>
+                    <tr>
+                        <th><input type="text" id="valor"></th>
+                        <th><input type="text" id="cuota"></th>
+                        <th>
+                            <select id="periodo">
+                                <option>3 Meses</option>
+                                <option>6 Meses</option>
+                                <option>9 Meses</option>
+                                <option>12 Meses</option>
+                                <option>18 Meses</option>
+                            </select>
+                        </th>
+                        <th><label id="interes"></label></th>
+                        <th><label id="pago"></label></th>
+                        <th><label id="mensual"></label></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="boton">
+            <input type="button" value="Calcular" onclick="plus()">
+            <input type="button" value="Borrar" onclick="borar()">
+        </div>
+    </div>
+    <div>
+        <footer>
+            <nav class="datos">
+                <h2>Nombre:</h2>
+                <p>Moreno Rodriguez Moises M.</p>
+                <h2>Grupo:</h2>
+                <p>4IV7</p>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
