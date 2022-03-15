@@ -8,28 +8,82 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <form name="formulario" method="post" action="">
-        <label>Formulario para el calculo de inversion de capital al 3.7% anual</label>
-        <br>
-        <table>
-            <tr>
-                <td>Intruduce la cantidad que deseas invertir</td>
-                <td><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="button" value="Calcular interes" name="enviar" onclick="interes()"></td>
-            </tr>
-            <tr>
-                <td>Su saldo total con el interes de 3.7% es de:</td>
-                <td><input type="text" name="sueldoI" id="cantidadI" readonly="readonly" class="input_text"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="button" value="Borrar datos" name="borrar" onclick="borrart()"></td>
-            </tr>
-        </table>
-    </form>
-    <script src="js/interes.js"></script>
+    <!--Problema 01-->
+    <div>
+        <h2>Ejercicio 01</h2>
+        <form name="formulario" method="post" action="">
+            <label>Calculo de inversion al 2% mensual</label>
+            <br>
+            <table>
+                <tr>
+                    <td>Intruduce la cantidad que deseas invertir:</td>
+                    <td><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td>Cuantos meses deseas invertir: </td>
+                    <td><input type="text" name="meses" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular inversion" name="enviar" onclick="interes()"></td>
+                </tr>
+                <tr>
+                    <td>Su saldo total es de:</td>
+                    <td><input type="text" name="sueldoI" id="cantidadI" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar datos" name="borrar" onclick="borrarI()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!--Problema 02-->
+    <div>
+        <h2>Ejercicio 02</h2>
+        <form name="formulario2" method="post" action="">
+            <label>Calculo de comision</label>
+            <br>
+            <table>
+                <tr>
+                    <td>Intruduce tu saldo: </td>
+                    <td><input type="text" name="sueldo" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td>Cuantas ventas obtuviste: </td>
+                    <td><input type="text" name="venta" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular comision" name="enviar" onclick="comision()"></td>
+                </tr>
+                <tr>
+                    <td>Tu sueldo total sera de: </td>
+                    <td><input type="text" name="total" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar datos" name="borrar" onclick="borrarC()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!--Problema 03-->
+    <div>
+        <h2>Ejercicio 03</h2>
+    </div>
+    <!--Problema 04-->
+    <div>
+        <h2>Ejercicio 04</h2>
+    </div>
+    <!--Problema 05-->
+    <div>
+        <h2>Ejercicio 05</h2>
+    </div>
+    <!--Problema 06-->
+    <div>
+        <h2>Ejercicio 06</h2>
+    </div>
+    <script src="js/funciones.js"></script>
 </body>
 </html>
