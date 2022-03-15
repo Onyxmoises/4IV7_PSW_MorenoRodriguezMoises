@@ -1,0 +1,24 @@
+@keyframes Ctext{
+    from{
+        color: rgb(0, 255, 0);
+    }
+    to{
+        color: rgb(233, 250, 0);
+    }
+}
+*{
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+}
+body{
+    border: 40px solid rgb(100, 0, 0);
+    padding: 10px;
+    background-color: rgb(128, 128, 128);
+}
+.enlace{
+    animation: Ctext 1s alternate infinite;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
