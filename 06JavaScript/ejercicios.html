@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de javaScript</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--Problema 01-->
@@ -42,7 +42,7 @@
     <div>
         <h2>Ejercicio 02</h2>
         <form name="formulario2" method="post" action="">
-            <label>Calculo de comision</label>
+            <label>Calculo de comision del 10%</label>
             <br>
             <table>
                 <tr>
@@ -71,14 +71,98 @@
     <!--Problema 03-->
     <div>
         <h2>Ejercicio 03</h2>
+        <form name="formulario3" method="post" action="">
+            <label>Calculo de descuento del 15%</label>
+            <br>
+            <table>
+                <tr>
+                    <td>Intruduce la cantidad total de la compra:</td>
+                    <td><input type="text" name="compra" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular descuento" name="enviar" onclick="descuento()"></td>
+                </tr>
+                <tr>
+                    <td>Total con descuento: </td>
+                    <td><input type="text" name="descuentoT" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar datos" name="borrar" onclick="borrarD()"></td>
+                </tr>
+            </table>
+        </form>
     </div>
     <!--Problema 04-->
     <div>
         <h2>Ejercicio 04</h2>
+        <form name="formulario4" method="post" action="">
+            <label>Calculo de calificacion final</label>
+            <br>
+            <table>
+                <tr>
+                    <td>Intruduce la califacion de tus 3 parciales: </td>
+                    <td><input type="text" name="p1" onkeypress="return validarn(event)" placeholder="1° Parcial"></td>
+                    <td><input type="text" name="p2" onkeypress="return validarn(event)" placeholder="2° Parcial"></td>
+                    <td><input type="text" name="p3" onkeypress="return validarn(event)" placeholder="3° Parcial"></td>
+                </tr>
+                <tr>
+                    <td>Introduce la calificacion de tu examen: </td>
+                    <td><input type="text" name="examen" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td>Introduce la calificacion de tu trabajo final: </td>
+                    <td><input type="text" name="tf" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular calificacion" name="enviar" onclick="calificacion()"></td>
+                </tr>
+                <tr>
+                    <td>Calificacion final: </td>
+                    <td><input type="text" name="final" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar datos" name="borrar" onclick="borrarF()"></td>
+                </tr>
+            </table>
+        </form>
     </div>
     <!--Problema 05-->
     <div>
         <h2>Ejercicio 05</h2>
+        <form name="formulario5" method="post" action="">
+            <label>Calculo de porcentaje de H y M</label>
+            <br>
+            <table>
+                <tr>
+                    <td>Intruduce la cantidad de mujeres en el salon:</td>
+                    <td><input type="text" name="mujeres" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td>Intruduce la cantidad de hombres en el salon: </td>
+                    <td><input type="text" name="hombres" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular porcentaje" name="enviar" onclick=""></td>
+                </tr>
+                <tr>
+                    <td>Porcentaje de mujeres: </td>
+                    <td><input type="text" name="pormujeres" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td>Porcentaje de hombres: </td>
+                    <td><input type="text" name="porhombres" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar datos" name="borrar" onclick="borrarP()"></td>
+                </tr>
+            </table>
+        </form>
     </div>
     <!--Problema 06-->
     <div>
