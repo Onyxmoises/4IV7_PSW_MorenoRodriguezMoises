@@ -46,7 +46,7 @@
             <br>
             <table>
                 <tr>
-                    <td>Intruduce tu saldo: </td>
+                    <td>Intruduce tu sueldo: </td>
                     <td><input type="text" name="sueldo" onkeypress="return validarn(event)"></td>
                 </tr>
                 <tr>
@@ -147,7 +147,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="button" value="Calcular porcentaje" name="enviar" onclick=""></td>
+                    <td><input type="button" value="Calcular porcentaje" name="enviar" onclick="porcentaje()"></td>
                 </tr>
                 <tr>
                     <td>Porcentaje de mujeres: </td>
@@ -167,6 +167,45 @@
     <!--Problema 06-->
     <div>
         <h2>Ejercicio 06</h2>
+        <form name="formulario6" method="post" action="">
+            <label>Calculo de edad</label>
+            <br>
+            <table>
+                <tr>
+                    <td>Intruduce la fecha actual: </td>
+                    <td><input type="text" name="diaA" onkeypress="return validarn(event)" placeholder="Dia"></td>
+                    <td><input type="text" name="mesA" onkeypress="return validarn(event)" placeholder="Mes"></td>
+                    <td><input type="text" name="añoA" onkeypress="return validarn(event)" placeholder="Año"></td>
+                </tr>
+                <tr>
+                    <td>Intruduce tu fecha de nacimiento: </td>
+                    <td><input type="text" name="diaN" onkeypress="return validarn(event)" placeholder="Dia"></td>
+                    <td><input type="text" name="mesN" onkeypress="return validarn(event)" placeholder="Mes"></td>
+                    <td><input type="text" name="añoN" onkeypress="return validarn(event)" placeholder="Año"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Calcular edad" name="enviar" onclick="edad()"></td>
+                </tr>
+                <tr>
+                    <td>Tu edad es: </td>
+                    <td><input type="text" name="años" readonly="readonly" class="input_text"></td>
+                    <td>Año(s)</td>
+                    <td><input type="text" name="meses" readonly="readonly" class="input_text"></td>
+                    <td>Mes(es) y </td>
+                    <td><input type="text" name="dias" readonly="readonly" class="input_text"></td>
+                    <td>Dia(s)</td>
+                </tr>
+                <tr>
+                    <td>Total de dias: </td>
+                    <td><input type="text" name="total" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar datos" name="borrar" onclick="borrarE()"></td>
+                </tr>
+            </table>
+        </form>
     </div>
     <script src="js/funciones.js"></script>
 </body>
