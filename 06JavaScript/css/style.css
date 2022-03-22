@@ -1,1 +1,17 @@
-*{}
+body{
+    background-color: rgb(138, 2, 2);
+}
+div{
+    text-align: center;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    background-color: gray;
+}
+h2{
+    text-align: center;
+}
+div table{
+    margin: 0 auto;
+}
+::placeholder{
+    color: black;
+}
