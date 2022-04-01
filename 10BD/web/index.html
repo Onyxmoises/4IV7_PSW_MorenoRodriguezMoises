@@ -6,55 +6,89 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Alumnos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="container">
             <h1>Consulta de Alumnos</h1>
-            <br>
-            <a href="ConsultarAlumnos">Ver lista de Alumno de Batiz</a>
+            <a href="ConsultarAlumnos">Ver lista de Alumnos</a>
         </div>
-        <div class="registro" >
-            <br>
-            <h1>Registrar Nuevo Alumno de Batiz</h1>
-            <br>
-            <form method="post" name="registro" action="RegistrarAlumno" >  
-                <label> Nombre del alumno </label>
+        <div class="registro">
+            <h1>Registrar nuevo alumno</h1>
+            <form method="post" name="registro" action="RegistrarAlumno">
+                <label>Nombre del alumno</label>
                 <br>
-                <input type="text" name="nombre"  >
+                <input type="text" name="nombre" onkeypress="return validarl(event)" onpaste="return false">
                 <br>
-                <label> Apellido Paterno </label>
+                <label>Apellido Paterno</label>
                 <br>
-                <input type="text" name="appat"  >
+                <input type="text" name="appat" onkeypress="return validarl(event)" onpaste="return false">
                 <br>
-                <label> Apellido Materno </label>
+                <label>Apellido Materno</label>
                 <br>
-                <input type="text" name="apmat"  >
+                <input type="text" name="apmat" onkeypress="return validarl(event)" onpaste="return false">
                 <br>
-                <label> Boleta </label>
+                <label>Boleta</label>
                 <br>
-                <input type="text" name="boleta"  >
+                <input type="text" name="boleta" onkeypress="return validarn(event)" onpaste="return false">
                 <br>
-                <label> Telefono </label>
+                <label>Telefono</label>
                 <br>
-                <input type="text" name="tel"  >
+                <input type="text" name="tel" onkeypress="return validarn(event)" onpaste="return false">
                 <br>
-                <input type="submit" value="Registrar Nuevo Alumno" name="enviar" >
+                <input type="submit" value="Registrar" name="enviar">
                 <br>
-                <input type="reset" value="Borrar Datos" >
+                <input type="reset" value="Borrar">
             </form>
         </div>
-        <div class="eliminar" >
-            <form method="get" name="eliminar" action="EliminarAlumno" >
+        <div class="modificar">
+            <h1>Modificar alumno</h1>
+            <form method="post" name="modificar" action="ModificarAlumno">
+                <label>Ingresa la boleta del alumno que deseas modificar</label>
                 <br>
-                <label>Ingrese la Boleta del Alumno que desea dar de Baja</label>
+                <label>(OBLIGATORIO)</label>
                 <br>
-                <input type="text" name="eliminarboleta"  >
+                <input type="text" name="nboleta" onkeypress="return validarn(event)" onpaste="return false">
                 <br>
-                <input type="submit" value="Alumno Eliminado" >
+                <label>Nombre del alumno</label>
+                <br>
+                <input type="text" name="modnombre" onkeypress="return validarl(event)" onpaste="return false">
+                <br>
+                <label>Apellido Paterno</label>
+                <br>
+                <input type="text" name="modappat" onkeypress="return validarl(event)" onpaste="return false">
+                <br>
+                <label>Apellido Materno</label>
+                <br>
+                <input type="text" name="modapmat" onkeypress="return validarl(event)" onpaste="return false">
+                <br>
+                <label>Boleta</label>
+                <br>
+                <input type="text" name="modboleta" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" name="modtel" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <input type="submit" value="Modificar" name="enviar">
+                <br>
+                <input type="reset" value="Borrar">
             </form>
         </div>
+        <div class="eliminar">
+            <h1>Eliminar alumno</h1>
+            <form method="post" name="eliminar" action="EliminarAlumno">
+                <br>
+                <label>Ingresa la boleta del alumno que deseas eliminar</label>
+                <br>
+                <input type="text" name="eliminarboleta" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <input type="submit" value="Eliminar alumno">
+            </form>
+        </div>
+        <script src="js/validar.js"></script>
     </body>
 </html>
